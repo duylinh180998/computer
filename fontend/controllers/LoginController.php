@@ -5,7 +5,7 @@ require_once 'models/Login.php';
 class LoginController extends Controller {
     public function index()
     {
-        unset($_SESSION['username']);
+//        unset($_SESSION['username']);
         $product_model = new Product();
         $login_model = new Login();
         $manufacturers = $product_model->getCategories();
