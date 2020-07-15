@@ -3,7 +3,7 @@
 <!-- BREADCRUMBS SETCTION START -->
 <?php require_once 'helpers/Helper.php' ?>
 <div class="breadcrumbs-section plr-200 mb-80">
-    <div class="breadcrumbs overlay-bg">
+    <div class="breadcrumbs overlay-bg" style="background-image: url('assets/img/breadcrumb/1.png')">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">

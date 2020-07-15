@@ -67,10 +67,10 @@
                                     <h3 class="pro-price"><?php echo number_format($product['price'])?> VNĐ</h3>
                                     <ul class="action-button">
                                         <li>
-                                            <i class="fa fa-eye"></i><?php echo $product['view']?>
+                                            <i class="fas fa-eye"></i><?php echo $product['view']?>
                                         </li>
                                         <li>
-                                            <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+                                            <a href="them-gio-hang/<?php echo $product_id?>" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
                                         </li>
                                     </ul>
                                 </div>

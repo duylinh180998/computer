@@ -4,15 +4,23 @@
             <div class="plr-185">
                 <div class="footer-top-inner gray-bg">
                     <div class="row">
-                        <div class="col-lg-4 col-md-5 col-sm-4">
-                            <div class="single-footer footer-about">
-                                <div class="footer-logo">
-                                    <img src="img/logo/logo.png" alt="">
-                                </div>
-                                <div class="footer-brief">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the subas industry's standard dummy text ever since the 1500s,</p>
-                                    <p>When an unknown printer took a galley of type and If you are going to use a passage of Lorem Ipsum scrambled it to make.</p>
-                                </div>
+                        <div class="col-lg-3 hidden-md hidden-sm">
+                            <div class="single-footer">
+                                <h4 class="footer-title border-left">Giới Thiệu Về Duy Linh</h4>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Giới Thiệu Công Ty</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Thông Tin Liên Hệ</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Thông Tin Tuyển Dụng</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Tin Tức</span></a>
+                                    </li>
+                                </ul>
                                 <ul class="footer-social">
                                     <li>
                                         <a class="facebook" href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
@@ -29,71 +37,65 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 hidden-md hidden-sm">
+                        <div class="col-lg-3 hidden-md hidden-sm">
                             <div class="single-footer">
-                                <h4 class="footer-title border-left">Shipping</h4>
+                                <h4 class="footer-title border-left">Hỗ Trợ Khách Hàng</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>New Products</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Hướng Dẫn Mua Hàng Trực Tuyến</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Discount Products</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Hướng Dẫn Thanh Toán</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Best Sell Products</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Hướng Dẫn Mua Trả Góp</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Popular Products</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>In Hóa Đơn Điện Tử</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Manufactirers</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Suppliers</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Special Products</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Góp Ý</span></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
                             <div class="single-footer">
-                                <h4 class="footer-title border-left">my account</h4>
+                                <h4 class="footer-title border-left">Chính Sách Chung</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a href="my-account.html"><i class="zmdi zmdi-circle"></i><span>My Account</span></a>
+                                        <a href="my-account.html"><i class="zmdi zmdi-circle"></i><span>Chính Sách,Quy Định Chung</span></a>
                                     </li>
                                     <li>
-                                        <a href="wishlist.html"><i class="zmdi zmdi-circle"></i><span>My Wishlist</span></a>
+                                        <a href="wishlist.html"><i class="zmdi zmdi-circle"></i><span>Chính Sách Vận Chuyển</span></a>
                                     </li>
                                     <li>
-                                        <a href="cart.html"><i class="zmdi zmdi-circle"></i><span>My Cart</span></a>
+                                        <a href="cart.html"><i class="zmdi zmdi-circle"></i><span>Chính Sách Bảo Hành</span></a>
                                     </li>
                                     <li>
-                                        <a href="login.html"><i class="zmdi zmdi-circle"></i><span>Sign In</span></a>
+                                        <a href="login.html"><i class="zmdi zmdi-circle"></i><span>Chính sách đổi trả và hoàn tiền</span></a>
                                     </li>
                                     <li>
-                                        <a href="login.html"><i class="zmdi zmdi-circle"></i><span>Registration</span></a>
+                                        <a href="login.html"><i class="zmdi zmdi-circle"></i><span>Chính sách cho doanh nghiệp</span></a>
                                     </li>
                                     <li>
-                                        <a href="checkout.html"><i class="zmdi zmdi-circle"></i><span>Check out</span></a>
+                                        <a href="checkout.html"><i class="zmdi zmdi-circle"></i><span>Chính sách hàng chính hãng</span></a>
                                     </li>
                                     <li>
-                                        <a href="order.html"><i class="zmdi zmdi-circle"></i><span>Oder Complete</span></a>
+                                        <a href="order.html"><i class="zmdi zmdi-circle"></i><span>Bảo mật thông tin khách hàng</span></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="col-lg-3 col-md-4 col-sm-4">
                             <div class="single-footer">
-                                <h4 class="footer-title border-left">Get in touch</h4>
+                                <h4 class="footer-title border-left">Góp Ý</h4>
                                 <div class="footer-message">
                                     <form action="#">
-                                        <input type="text" name="name" placeholder="Your name here...">
-                                        <input type="text" name="email" placeholder="Your email here...">
-                                        <textarea class="height-80" name="message" placeholder="Your messege here..."></textarea>
-                                        <button class="submit-btn-1 mt-20 btn-hover-1" type="submit">submit message</button>
+                                        <input type="text" name="name" placeholder="Tên...">
+                                        <input type="text" name="email" placeholder="Email...">
+                                        <textarea class="height-80" name="message" placeholder="Góp ý của bạn..."></textarea>
+                                        <button class="submit-btn-1 mt-20 btn-hover-1" type="submit">Gửi</button>
                                     </form>
                                 </div>
                             </div>

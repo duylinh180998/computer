@@ -9,3 +9,6 @@ RewriteRule chi-tiet-san-pham/(.*)/([0-9]{1,})/([0-9]{1,}) index.php?controller=
 #rule cho danh sách sản phẩm
 RewriteRule trang-chu index.php?controller=home&action=index
 RewriteRule dang-nhap index.php?controller=login&action=index
+RewriteRule gio-hang-cua-ban index.php?controller=card&action=index
+RewriteRule them-gio-hang/([0-9]{1,}) index.php?controller=card&action=add&id=$1
+RewriteRule xoa-san-pham/([0-9]{1,}) index.php?controller=card&action=delete&id=$1

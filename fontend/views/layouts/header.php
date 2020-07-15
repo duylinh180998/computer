@@ -4,7 +4,7 @@
 
 <!-- Mirrored from demo.hasthemes.com/subas-preview/subas/trang-chu by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jun 2019 07:20:42 GMT -->
 <head>
-    <base href="<?php echo $_SERVER['SCRIPT_NAME']?>">
+    <base href="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Duy Linh || Home</title>
@@ -29,10 +29,10 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- User style -->
     <link rel="stylesheet" href="assets/css/custom.css">
-
+    <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- Style customizer (Remove these two lines please) -->
     <link rel="stylesheet" href="assets/css/style-customizer.css">
-<!--    <link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+    <!--    <link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
     <link href="#" data-style="styles" rel="stylesheet">
     <!-- Modernizr JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -40,7 +40,8 @@
 
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Body main wrapper start -->
@@ -63,21 +64,21 @@
                                 <li>
                                     <a href="trang-chu">
                                         <i class="zmdi zmdi-account"></i>
-                                        <?php echo isset($_SESSION['username'])?$_SESSION['username']:'My Account'?>
+                                        <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'My Account' ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <?php if (isset($_SESSION['username'])):?>
-                                    <a href="dang-nhap" onclick="return confirm('Bạn có muốn đăng xuất?')">
-                                        <i class="zmdi zmdi-lock"></i>
-                                        Logout
-                                    </a>
-                                    <?php else:?>
+                                    <?php if (isset($_SESSION['username'])): ?>
+                                        <a href="dang-nhap" onclick="return confirm('Bạn có muốn đăng xuất?')">
+                                            <i class="zmdi zmdi-lock"></i>
+                                            Logout
+                                        </a>
+                                    <?php else: ?>
                                         <a href="dang-nhap">
                                             <i class="zmdi zmdi-lock"></i>
                                             Login
                                         </a>
-                                    <?php endif;?>
+                                    <?php endif; ?>
                                 </li>
                             </ul>
                         </div>
@@ -94,7 +95,7 @@
                         <div class="col-md-2 col-sm-6 col-xs-12">
                             <div class="logo" style="padding: 0px">
                                 <a href="trang-chu">
-                                    <img src="assets/img/DuyLinh.png" width="114" height="100"  alt="main logo">
+                                    <img src="assets/img/DuyLinh.png" width="114" height="100" alt="main logo">
                                 </a>
                             </div>
                         </div>
@@ -104,26 +105,27 @@
                                 <ul class="main-menu text-center">
                                     <li><a href="trang-chu">Trang Chủ</a>
                                     </li>
-                                    <li class="mega-parent"><a href="index.php?controller=product&action=index">Sản Phẩm</a>
+                                    <li class="mega-parent"><a href="index.php?controller=product&action=index">Sản
+                                            Phẩm</a>
                                         <div class="mega-menu-area clearfix">
                                             <div class="mega-menu-link f-left">
                                                 <ul class="single-mega-item">
                                                     <li class="menu-title"><b>LapTop</b></li>
                                                     <?php foreach ($manufacturers as $manufacturer):
-                                                        $link1='index.php?controller=product&action=hsx&id='.$manufacturer['id_manufacturer']
+                                                        $link1 = 'index.php?controller=product&action=hsx&id=' . $manufacturer['id_manufacturer']
                                                         ?>
-                                                    <li>
-                                                        <b><a href="<?php echo $link1?>"><?php echo $manufacturer['name_manufacturer']?></a></b>
-                                                    </li>
-                                                    <?php endforeach;?>
+                                                        <li>
+                                                            <b><a href="<?php echo $link1 ?>"><?php echo $manufacturer['name_manufacturer'] ?></a></b>
+                                                        </li>
+                                                    <?php endforeach; ?>
                                                 </ul>
                                                 <ul class="single-mega-item">
                                                     <li class="menu-title"><b>WorkStation</b></li>
-                                                    <?php foreach ($manufacturers as $manufacturer):?>
+                                                    <?php foreach ($manufacturers as $manufacturer): ?>
                                                         <li>
-                                                            <b><a href="#"><?php echo $manufacturer['name_manufacturer']?></a></b>
+                                                            <b><a href="#"><?php echo $manufacturer['name_manufacturer'] ?></a></b>
                                                         </li>
-                                                    <?php endforeach;?>
+                                                    <?php endforeach; ?>
                                                 </ul>
                                                 <ul class="single-mega-item">
                                                     <li class="menu-title"><b>Linh Kiện</b></li>
@@ -163,7 +165,8 @@
                                         <form action="" method="GET">
                                             <div class="top-search-box">
                                                 <input type="hidden" name="controller" value="product">
-                                                <input type="text" name="name" placeholder="Search here your product...">
+                                                <input type="text" name="name"
+                                                       placeholder="Tìm Kiếm Sản Phẩm...">
                                                 <button type="submit" name="seach">
                                                     <i class="zmdi zmdi-search"></i>
                                                 </button>
@@ -176,7 +179,7 @@
                                     <div class="total-cart-in">
                                         <div class="cart-toggler">
                                             <a href="#">
-                                                <span class="cart-quantity">02</span><br>
+                                                <span class="cart-quantity"><?php echo isset($_SESSION['card']) ? count($_SESSION['card']) : 0 ?></span><br>
                                                 <span class="cart-icon">
                                                         <i class="zmdi zmdi-shopping-cart-plus"></i>
                                                     </span>
@@ -185,86 +188,50 @@
                                         <ul>
                                             <li>
                                                 <div class="top-cart-inner your-cart">
-                                                    <h5 class="text-capitalize">Your Cart</h5>
+                                                    <h5 class="text-capitalize">Giỏ Hàng Của Bạn</h5>
                                                 </div>
                                             </li>
+
                                             <li>
-                                                <div class="total-cart-pro">
-                                                    <!-- single-cart -->
-                                                    <div class="single-cart clearfix">
-                                                        <div class="cart-img f-left">
-                                                            <a href="#">
-                                                                <img src="img/cart/1.jpg" alt="Cart Product" />
-                                                            </a>
-                                                            <div class="del-icon">
-                                                                <a href="#">
-                                                                    <i class="zmdi zmdi-close"></i>
-                                                                </a>
+                                                <?php if (isset($_SESSION['card'])): ?>
+                                                    <?php foreach ($_SESSION['card'] as $card): ?>
+                                                        <div class="total-cart-pro">
+                                                            <!-- single-cart -->
+
+                                                            <div class="single-cart clearfix">
+                                                                <div class="cart-img f-left">
+                                                                    <a href="">
+                                                                        <img width="50px" height="50px"
+                                                                             src="../backend/assets/uploads/<?php echo $card['avatar'] ?>"
+                                                                             alt="Cart Product"/>
+                                                                    </a>
+                                                                </div>
+                                                                <div class=" f-left">
+                                                                    <h6 class="text-capitalize">
+                                                                        <a href="#"><?php echo $card['name'] ?></a>
+                                                                    </h6>
+                                                                    <p>
+                                                                        <span>Hãng Sản Xuất <strong>:</strong></span><?php echo $card['hsx'] ?>
+                                                                    </p>
+                                                                    <p>
+                                                                        <span>Giá <strong>:</strong></span><?php echo number_format($card['price']) ?>
+                                                                    </p>
+                                                                    <p>
+                                                                        <span>Số Lượng <strong>:</strong></span><?php echo $card['quality'] ?>
+                                                                    </p>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="cart-info f-left">
-                                                            <h6 class="text-capitalize">
-                                                                <a href="#">Dummy Product Name</a>
-                                                            </h6>
-                                                            <p>
-                                                                <span>Brand <strong>:</strong></span>Brand Name
-                                                            </p>
-                                                            <p>
-                                                                <span>Model <strong>:</strong></span>Grand s2
-                                                            </p>
-                                                            <p>
-                                                                <span>Color <strong>:</strong></span>Black, White
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    <?php endforeach; ?>
                                                     <!-- single-cart -->
-                                                    <div class="single-cart clearfix">
-                                                        <div class="cart-img f-left">
-                                                            <a href="#">
-                                                                <img src="img/cart/1.jpg" alt="Cart Product" />
-                                                            </a>
-                                                            <div class="del-icon">
-                                                                <a href="#">
-                                                                    <i class="zmdi zmdi-close"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cart-info f-left">
-                                                            <h6 class="text-capitalize">
-                                                                <a href="#">Dummy Product Name</a>
-                                                            </h6>
-                                                            <p>
-                                                                <span>Brand <strong>:</strong></span>Brand Name
-                                                            </p>
-                                                            <p>
-                                                                <span>Model <strong>:</strong></span>Grand s2
-                                                            </p>
-                                                            <p>
-                                                                <span>Color <strong>:</strong></span>Black, White
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="top-cart-inner subtotal">
-                                                    <h4 class="text-uppercase g-font-2">
-                                                        Total  =
-                                                        <span>$ 500.00</span>
-                                                    </h4>
-                                                </div>
+                                                <?php else: ?>
+                                                    <h2>Giỏ hàng trống</h2>
+                                                <?php endif; ?>
                                             </li>
                                             <li>
                                                 <div class="top-cart-inner view-cart">
                                                     <h4 class="text-uppercase">
-                                                        <a href="#">View cart</a>
-                                                    </h4>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="top-cart-inner check-out">
-                                                    <h4 class="text-uppercase">
-                                                        <a href="#">Check out</a>
+                                                        <a href="gio-hang-cua-ban">Xem Giỏ Hàng</a>
                                                     </h4>
                                                 </div>
                                             </li>
