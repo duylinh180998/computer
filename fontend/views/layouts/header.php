@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from demo.hasthemes.com/subas-preview/subas/trang-chu by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jun 2019 07:20:42 GMT -->
+<!-- Mirrored from demo.hasthemes.com/subas-preview/subas/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jun 2019 07:20:42 GMT -->
 <head>
     <base href="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
     <meta charset="utf-8">
@@ -62,7 +62,7 @@
                         <div class="top-link clearfix">
                             <ul class="link f-right">
                                 <li>
-                                    <a href="trang-chu">
+                                    <a href="index.php">
                                         <i class="zmdi zmdi-account"></i>
                                         <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'My Account' ?>
                                     </a>
@@ -94,7 +94,7 @@
                         <!-- logo -->
                         <div class="col-md-2 col-sm-6 col-xs-12">
                             <div class="logo" style="padding: 0px">
-                                <a href="trang-chu">
+                                <a href="index.php">
                                     <img src="assets/img/DuyLinh.png" width="114" height="100" alt="main logo">
                                 </a>
                             </div>
@@ -103,7 +103,7 @@
                         <div class="col-md-8 hidden-sm hidden-xs">
                             <nav id="primary-menu">
                                 <ul class="main-menu text-center">
-                                    <li><a href="trang-chu">Trang Chủ</a>
+                                    <li><a href="index.php">Trang Chủ</a>
                                     </li>
                                     <li class="mega-parent"><a href="index.php?controller=product&action=index">Sản
                                             Phẩm</a>
@@ -165,6 +165,7 @@
                                         <form action="" method="GET">
                                             <div class="top-search-box">
                                                 <input type="hidden" name="controller" value="product">
+                                                <input type="hidden" name="action" value="index">
                                                 <input type="text" name="name"
                                                        placeholder="Tìm Kiếm Sản Phẩm...">
                                                 <button type="submit" name="seach">
@@ -178,7 +179,7 @@
                                 <div class="total-cart f-left">
                                     <div class="total-cart-in">
                                         <div class="cart-toggler">
-                                            <a href="#">
+                                            <a href="gio-hang-cua-ban">
                                                 <span class="cart-quantity"><?php echo isset($_SESSION['card']) ? count($_SESSION['card']) : 0 ?></span><br>
                                                 <span class="cart-icon">
                                                         <i class="zmdi zmdi-shopping-cart-plus"></i>
@@ -255,10 +256,10 @@
                     <div class="mobile-menu">
                         <nav id="dropdown">
                             <ul>
-                                <li><a href="trang-chu">Home</a>
+                                <li><a href="index.php">Home</a>
                                     <ul>
                                         <li>
-                                            <a href="trang-chu">Home Version 1</a>
+                                            <a href="index.php">Home Version 1</a>
                                         </li>
                                         <li>
                                             <a href="index-2.html">Home Version 2</a>

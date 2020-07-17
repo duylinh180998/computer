@@ -64,7 +64,7 @@ class Model
         if(isset($_GET['seach'])){
             $str_seach.=" AND name_computer LIKE '%{$_GET['name']}%'";
         }
-        $querySearch.=" $str_hsx $str_price $str_seach";
+        $querySearch.="$str_hsx $str_price $str_seach";
         return $querySearch;
     }
     public function getPagination($table)

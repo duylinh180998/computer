@@ -21,7 +21,7 @@
                                 <div class="slider-info-inner">
                                     <h6 class="slider-title-1 text-black-1"><?php echo $product['name_computer']?></h6>
                                     <a href="<?php echo $product_link?>" class="button extra-small btn-primary">
-                                        <span class="text-uppercase">Buy now</span>
+                                        <span class="text-uppercase">Mua Ngay</span>
                                     </a>
                                 </div>
                             </div>

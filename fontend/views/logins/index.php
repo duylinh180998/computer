@@ -28,9 +28,32 @@
                             <style>
                                 input{
                                     border-radius: 10px;
-                                    border: 1px solid red !important; ;
+                                    border: 1px solid red !important;
                                 }
                             </style>
+                            <?php
+                            if (isset($_SESSION['error'])) {
+                                //hiển thị mảng theo key trong 1 chuỗi mà ko cần nối chuỗi
+                                //sử dụng ký tự {} bao lấy mảng đó
+                                echo "<div class='alert alert-danger'>
+                                                 {$_SESSION['error']}
+                                                    </div>";
+                                unset($_SESSION['error']);
+                            }
+                            if (!empty($this->error)) {
+                                echo "<div class='alert alert-danger'>
+        $this->error
+        </div>";
+                            }
+                            if (isset($_SESSION['success'])) {
+                                //hiển thị mảng theo key trong 1 chuỗi mà ko cần nối chuỗi
+                                //sử dụng ký tự {} bao lấy mảng đó
+                                echo "<div class='alert alert-success'>
+        {$_SESSION['success']}
+        </div>";
+                                unset($_SESSION['success']);
+                            }
+                            ?>
                             <div class="login-account p-30 box-shadow">
                                 <input type="text" name="username" placeholder="UserName" value="<?php echo isset($_POST['dangnhap'])?$_POST['username']:''?>">
                                 <input type="password" name="password" placeholder="Password">
