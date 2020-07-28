@@ -159,6 +159,14 @@
                     </a>
                 </li>
                 <li>
+                    <a id="qltk" href="index.php?controller=oder&action=index">
+                        <i class="fas fa-shopping-cart"></i> <span>Quản Lí Đơn Hàng</span>
+                        <span class="pull-right-container">
+              <!--<small class="label pull-right bg-green">new</small>-->
+            </span>
+                    </a>
+                </li>
+                <li>
                     <a id="qltk" href="index.php?controller=acc&action=index">
                         <i class="fas fa-user"></i> <span>Quản Lí Tài Khoản</span>
                         <span class="pull-right-container">

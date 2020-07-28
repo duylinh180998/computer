@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-md-3">
                     <input class="form-control" value="<?php echo isset($_GET['seachuser'])?$_GET['username']:""?>" type="text"
-                           placeholder="Username" name="username" aria-label="Search" style="border-radius:10px">
+                           placeholder="Username" name="username" style="border-radius:10px" readonly>
                 </div>
                 <div class="col-md-3 pull-right" ><button name="seachuser" class="btn btn-primary" type="submit">Tìm kiếm<i class="fas fa-search"></i></button></div>
             </form>

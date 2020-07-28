@@ -16,6 +16,13 @@ class Order_detail extends Model{
             ':id_harddrive'=>$this->id_harddrive,
             ':quality'=>$this->quality,
         ];
+        $sql_update="UPDATE computers set `amount`=`amount` - :quality where id_computer=:id_computer";
+        $obj_update=$this->connection->prepare($sql_update);
+        $arr_update=[
+          ':quality'=>$this->quality,
+          ':id_computer'=>$this->id_computer,
+        ];
+        $obj_update->execute($arr_update);
         return $obj_insert->execute($arr_insert);
     }
 }

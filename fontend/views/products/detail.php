@@ -97,7 +97,7 @@
                                     <!--  hr -->
                                     <hr>
                                     <div>
-                                        <a href="#" class="button extra-small button-black" tabindex="-1">
+                                        <a href="them-gio-hang/<?php echo $product['id_computer']?>" class="button extra-small button-black" tabindex="-1">
                                             <span class="text-uppercase">Mua Ngay</span>
                                         </a>
                                     </div>

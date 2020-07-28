@@ -130,10 +130,10 @@
                                                 <ul class="single-mega-item">
                                                     <li class="menu-title"><b>Linh Kiện</b></li>
                                                     <li>
-                                                        <a href="#"><b>Ram</b></a>
+                                                        <a href="index.php?controller=ram&action=index"><b>Ram</b></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#"><b>Ổ Cứng</b></a>
+                                                        <a href="index.php?controller=Ocung&action=index"><b>Ổ Cứng</b></a>
                                                     </li>
                                                 </ul>
                                             </div>

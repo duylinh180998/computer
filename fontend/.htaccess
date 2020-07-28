@@ -14,3 +14,4 @@ RewriteRule xoa-san-pham/([0-9]{1,}) index.php?controller=card&action=delete&id=
 RewriteRule thanh-toan index.php?controller=payment&action=index
 RewriteRule thanh-toan-truc-tuyen index.php?controller=payment&action=online
 RewriteRule cam-on index.php?controller=payment&action=thanks
+RewriteRule chi-tiet-ram/(.*)/([0-9]{1,}) index.php?controller=ram&action=detail&slug=$1&id=$2

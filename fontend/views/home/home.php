@@ -90,16 +90,6 @@
                         <h2 class="uppercase"><a href="index.php?controller=product&action=index">Danh Sách Sản Phẩm</a></h2>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="pro-tab-menu text-right">
-                        <!-- Nav tabs -->
-                        <ul class="" >
-                            <li class="active"><a href="#popular-product" data-toggle="tab">Sản Phẩm Mới </a></li>
-                            <li><a href="#new-arrival" data-toggle="tab">Sản Phẩm Bán Chạy</a></li>
-
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="product-tab">
                 <!-- Tab panes -->

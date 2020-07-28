@@ -54,9 +54,9 @@ class AccController extends Controller{
                 $this->error='Không để Username hoặc Password trống';
             }
             $user_update=$acc_model->getUser($username);
-            if(!empty($user_update)){
-                $this->error="Username Đã tồn tại";
-            }
+//            if(!empty($user_update)){
+//                $this->error="Username Đã tồn tại";
+//            }
             if(empty($this->error)){
                 $acc_model->id_role=$id_role;
                 $acc_model->username=$username;
