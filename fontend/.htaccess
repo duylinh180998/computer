@@ -15,3 +15,5 @@ RewriteRule thanh-toan index.php?controller=payment&action=index
 RewriteRule thanh-toan-truc-tuyen index.php?controller=payment&action=online
 RewriteRule cam-on index.php?controller=payment&action=thanks
 RewriteRule chi-tiet-ram/(.*)/([0-9]{1,}) index.php?controller=ram&action=detail&slug=$1&id=$2
+RewriteRule lien-he index.php?controller=contact&action=index
+RewriteRule thong-tin index.php?controller=contact&action=about

@@ -53,7 +53,7 @@ inner  join categories on harddrive.id_category=categories.id_category {$this->q
                                            `category_harddrive`=:category_harddrive,
                                            `capacity`=:capacity,
                                            `price`=:price,
-                                           `picture`=:price,
+                                           `picture`=:picture,
                                             `amount`=:amount where id_harddrive=$id";
         $obj_update=$this->connection->prepare($sql_update);
         $arrupdate=[

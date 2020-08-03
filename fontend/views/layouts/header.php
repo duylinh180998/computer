@@ -119,14 +119,14 @@
                                                         </li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title"><b>WorkStation</b></li>
-                                                    <?php foreach ($manufacturers as $manufacturer): ?>
-                                                        <li>
-                                                            <b><a href="#"><?php echo $manufacturer['name_manufacturer'] ?></a></b>
-                                                        </li>
-                                                    <?php endforeach; ?>
-                                                </ul>
+<!--                                                <ul class="single-mega-item">-->
+<!--                                                    <li class="menu-title"><b>WorkStation</b></li>-->
+<!--                                                    --><?php //foreach ($manufacturers as $manufacturer): ?>
+<!--                                                        <li>-->
+<!--                                                            <b><a href="#">--><?php //echo $manufacturer['name_manufacturer'] ?><!--</a></b>-->
+<!--                                                        </li>-->
+<!--                                                    --><?php //endforeach; ?>
+<!--                                                </ul>-->
                                                 <ul class="single-mega-item">
                                                     <li class="menu-title"><b>Linh Kiện</b></li>
                                                     <li>
@@ -139,16 +139,16 @@
                                             </div>
                                             <div class="mega-menu-photo f-left">
                                                 <a href="#">
-                                                    <img src="assets/img/mega-menu/1.jpg" alt="mega menu image">
+                                                    <img src="assets/img/mega-menu/menu.jpg" alt="mega menu image">
                                                 </a>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="about.html">Thông Tin</a>
+                                        <a href="thong-tin">Thông Tin</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Liên Hệ</a>
+                                        <a href="lien-he">Liên Hệ</a>
                                     </li>
                                 </ul>
                             </nav>

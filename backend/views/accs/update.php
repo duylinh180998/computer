@@ -3,7 +3,7 @@
     <form method="POST" action="" enctype="multipart/form-data">
         <div class=" col-lg-6">
             <label>Username :</label>
-            <input type="text" name="username"  value="<?php echo isset($_POST['update'])?$_POST['username']:$user['username']?>"
+            <input readonly type="text" name="username"  value="<?php echo isset($_POST['update'])?$_POST['username']:$user['username']?>"
                    class="form-control" placeholder="Nhập Username"/>
         </div>
         <div class=" col-lg-6">

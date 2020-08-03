@@ -8,4 +8,11 @@ class Order extends Model{
         $oders=$obj_get_all->fetchAll(PDO::FETCH_ASSOC);
         return $oders;
     }
+    public function getOder($id){
+        $sql_get_oder="Select * FROM oder_details INNER JOIN computers ON oder_details.id_computer=computers.id_computer where id_oder=$id";
+        $obj_get_oder=$this->connection->prepare($sql_get_oder);
+        $obj_get_oder->execute();
+        $oders=$obj_get_oder->fetchAll(PDO::FETCH_ASSOC);
+        return $oders;
+    }
 }

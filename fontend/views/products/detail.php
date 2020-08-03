@@ -1,21 +1,21 @@
 <?php require_once 'helpers/Helper.php'?>
-<div class="breadcrumbs-section plr-200 mb-80">
-    <div class="breadcrumbs overlay-bg" style="background-image: url('assets/img/breadcrumb/1.png')">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="breadcrumbs-inner">
-                        <h1 class="breadcrumbs-title">THÔNG TIN SẢN PHẨM</h1>
-                        <ul class="breadcrumb-list">
-                            <li><a href="trang-chu">TRANG CHỦ</a></li>
-                            <li>THÔNG TIN SẢN PHẨM</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="breadcrumbs-section plr-200 mb-80">-->
+<!--    <div class="breadcrumbs overlay-bg" style="background-image: url('assets/img/breadcrumb/1.png')">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-xs-12">-->
+<!--                    <div class="breadcrumbs-inner">-->
+<!--                        <h1 class="breadcrumbs-title">THÔNG TIN SẢN PHẨM</h1>-->
+<!--                        <ul class="breadcrumb-list">-->
+<!--                            <li><a href="trang-chu">TRANG CHỦ</a></li>-->
+<!--                            <li>THÔNG TIN SẢN PHẨM</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <section id="page-content" class="page-wrapper">
 
